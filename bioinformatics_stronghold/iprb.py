@@ -8,7 +8,13 @@ def main():
         
     with open(sys.argv[1]) as file:
         lines = file.readlines()
-        print(lines)
+        
+    k = int(lines[0][0])
+    m = int(lines[0][2])
+    n = int(lines[0][4])
+    
+    total = k+m+n
+    
     
 if __name__ == "__main__":
     main()
